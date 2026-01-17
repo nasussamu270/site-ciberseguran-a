@@ -64,45 +64,34 @@ footer {
   color: #8aa4b1;
 }
 .cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px;
-    flex-wrap: wrap;
+    display: flex;               /* coloca os cards em linha */
+    gap: 20px;                   /* espaço entre os cards */
+    overflow-x: auto;            /* ativa scroll horizontal */
+    padding: 20px 40px;          /* espaçamento interno */
+    scroll-behavior: smooth;     /* rolagem suave */
+    -webkit-overflow-scrolling: touch; /* rolagem suave no mobile */
+}
+
+.cards::-webkit-scrollbar {
+    height: 8px;                 /* altura da barra de scroll horizontal */
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: #58a6ff;         /* cor da barra de scroll */
+    border-radius: 4px;
 }
 
 .card {
-    background: #161b22;
-    border: 1px solid #30363d;
+    flex: 0 0 250px;             /* largura fixa, não encolhe */
+    background: #161b22;         /* fundo do card */
+    border: 1px solid #30363d;   /* borda do card */
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
     text-align: center;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    white-space: normal;         /* permite quebra de linha dentro do card */
 }
 
-.card h2 {
-    color: #58a6ff;
-}
-
-.card p {
-    font-size: 14px;
-    margin: 15px 0;
-}
-
-.card a {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #238636;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-.card a:hover {
-    background: #2ea043;
-}
-/* ===== CYBERSTUDY PRO ===== */
 
 body {
     background: #0b0f14;
