@@ -1,15 +1,14 @@
-// animação ao aparecer na tela
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
+            obs.unobserve(entry.target); // anima só uma vez
         }
     });
 }, {
     threshold: 0.2
 });
 
-// elementos que vão animar
 document.querySelectorAll('.card, .section, section').forEach(el => {
     observer.observe(el);
 });
