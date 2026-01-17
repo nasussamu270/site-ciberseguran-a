@@ -177,3 +177,8 @@ section {
     margin: 0 auto 15px; /* CENTRALIZA */
     border-radius: 6px;
 }
+/* Esconde imagens grandes fora dos cards */
+header img,
+.page-image {
+    display: none;
+}
