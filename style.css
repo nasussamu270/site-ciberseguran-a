@@ -163,3 +163,9 @@ section {
     display: block;
     border-radius: 8px;
 }
+/* Centralizar imagens dos cards e das páginas */
+.card img,
+.page-image {
+    display: block;
+    margin: 0 auto 15px auto;
+}
