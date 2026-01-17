@@ -7,42 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Linux - Cibersegurança</h1>
 
-<header>
-    <h1>Linux para Cibersegurança</h1>
-    <p>Sistema essencial para a área de segurança</p>
-</header>
+  <!-- Introdução ao Linux -->
+  <section class="section" id="introducao">
+    <h2>Introdução ao Linux</h2>
+    <p>O Linux é um sistema operacional <strong>livre e de código aberto</strong>, baseado no Unix, conhecido por sua <strong>estabilidade, segurança e flexibilidade</strong>. É amplamente usado em servidores, programação, cibersegurança e dispositivos embarcados.</p>
+    <p>Ao contrário do Windows ou macOS, o Linux permite que os usuários tenham <strong>controle total sobre o sistema</strong>, podendo modificar, distribuir e personalizar tudo. Por isso, é muito popular entre profissionais de tecnologia e entusiastas de segurança digital.</p>
+  </section>
 
-<section>
-    <h2>📁 Comandos Básicos</h2>
+  <!-- Comandos essenciais -->
+  <section class="section" id="comandos">
+    <h2>📁 Comandos Essenciais</h2>
+    <p>Para usar Linux de forma eficiente, é importante conhecer alguns comandos básicos de terminal:</p>
     <ul>
-        <li>ls – listar arquivos</li>
-        <li>cd – navegar entre pastas</li>
-        <li>mkdir – criar diretórios</li>
-        <li>rm – remover arquivos</li>
+      <li><strong>ls</strong> – lista arquivos e pastas do diretório atual.</li>
+      <li><strong>cd [diretório]</strong> – muda para outro diretório.</li>
+      <li><strong>pwd</strong> – mostra o caminho completo do diretório atual.</li>
+      <li><strong>mkdir [nome]</strong> – cria uma nova pasta.</li>
+      <li><strong>rm [arquivo]</strong> – remove arquivos ou pastas.</li>
+      <li><strong>cp [origem] [destino]</strong> – copia arquivos ou pastas.</li>
+      <li><strong>mv [origem] [destino]</strong> – move ou renomeia arquivos/pastas.</li>
+      <li><strong>cat [arquivo]</strong> – exibe o conteúdo de um arquivo.</li>
+      <li><strong>nano [arquivo]</strong> ou <strong>vim [arquivo]</strong> – editores de texto no terminal.</li>
+      <li><strong>man [comando]</strong> – exibe o manual de qualquer comando, ex: <code>man ls</code>.</li>
     </ul>
-</section>
-
-<section>
-    <h2>🖥️ Terminal</h2>
-    <p>
-        O terminal é a principal ferramenta no Linux.
-        Profissionais de segurança usam o terminal para análise,
-        automação e testes.
-    </p>
-</section>
-
-<section>
-    <h2>🔐 Permissões</h2>
+    <p>Dicas rápidas:</p>
     <ul>
-        <li>r – leitura</li>
-        <li>w – escrita</li>
-        <li>x – execução</li>
-        <li>chmod – alterar permissões</li>
+      <li>Use a tecla <strong>Tab</strong> para completar nomes de arquivos automaticamente.</li>
+      <li>Combine comandos usando <strong>|</strong> (pipe), ex: <code>ls | grep txt</code>.</li>
+      <li>Use <strong>history</strong> para ver comandos recentes e reutilizá-los.</li>
     </ul>
-</section>
+  </section>
 
-<a href="index.html">⬅ Voltar para o início</a>
+  <!-- Segurança e boas práticas -->
+  <section class="section" id="seguranca">
+    <h2>🔐 Segurança e Boas Práticas</h2>
+    <p>Mesmo sendo mais seguro que outros sistemas, algumas práticas ajudam a proteger seu Linux:</p>
+    <ul>
+      <li>Mantenha o sistema sempre atualizado: <code>sudo apt update && sudo apt upgrade</code></li>
+      <li>Evite usar a conta root diretamente; prefira <strong>sudo</strong> para tarefas administrativas.</li>
+      <li>Use senhas fortes e diferentes para cada usuário.</li>
+      <li>Configure um firewall, por exemplo com <strong>ufw</strong>.</li>
+      <li>Verifique permissões de arquivos e pastas: <code>chmod</code> e <code>chown</code>.</li>
+      <li>Criptografe dados importantes e faça backup regularmente.</li>
+      <li>Monitore logs do sistema em <code>/var/log</code> para identificar comportamentos suspeitos.</li>
+    </ul>
+  </section>
 
+  <!-- Link de volta -->
+  <p><a href="index.html">⬅ Voltar para o início</a></p>
 </body>
+
 </html>
