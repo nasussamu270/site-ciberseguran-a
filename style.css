@@ -155,3 +155,11 @@ section {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+.card img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    border-radius: 8px;
+}
