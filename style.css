@@ -91,7 +91,6 @@ footer {
     white-space: normal;         /* permite quebra de linha dentro do card */
 }
 
-<script src="script.js"></script>
 
 body {
     background: #0b0f14;
@@ -141,4 +140,18 @@ footer {
     padding: 20px;
     color: #94a3b8;
     font-size: 14px;
+}
+/* ===== ANIMAÇÃO JS ===== */
+
+.card,
+.section,
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
