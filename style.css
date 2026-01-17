@@ -169,3 +169,11 @@ section {
     display: block;
     margin: 0 auto 15px auto;
 }
+/* ===== IMAGEM DENTRO DO CARD ===== */
+.card-img {
+    width: 120px;        /* controla o tamanho */
+    height: auto;
+    display: block;      /* permite centralização */
+    margin: 0 auto 15px; /* CENTRALIZA */
+    border-radius: 6px;
+}
